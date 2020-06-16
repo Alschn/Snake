@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# custom files
+plansza.txt
+wall.txt
+8bit.mp3
+8bit2.mp3
+8bit3.mp3
+8bit4.mp3
