@@ -15,9 +15,8 @@ background = args.background
 
 
 def get_tickrate():
-    default_tickrate = 10
     if tickrate is None:
-        return default_tickrate
+        return cs.default_tickrate
     else:
         if tickrate in range(5, 21):
             return tickrate
