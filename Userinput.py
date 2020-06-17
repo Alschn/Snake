@@ -7,12 +7,13 @@ parser.add_argument("--tickrate", help='Set the game speed between 5 and 20. Def
 parser.add_argument("--filename", help='Pass your .txt file. Note: File has to be in the same folder as the gamefile')
 parser.add_argument("--spawnrange", help='Set food spawnrate. 0 - food can spawn next to the wall, 1 - food will spawn 1 or more block further from the wall ', type=int)
 parser.add_argument("--background", help='Pass your background image in .jpg or .png format')
+parser.add_argument("--soundtrack", help='Pass your soundtrack file')
 args = parser.parse_args()
 tickrate = args.tickrate
 filename = args.filename
 spawnrange = args.spawnrange
 background = args.background
-
+soundtrack = args.soundtrack
 
 def get_tickrate():
     if tickrate is None:
@@ -37,7 +38,7 @@ def get_spawnrange():
 
 def get_users_map():
     if os.path.isdir(cs.default_filename):  # jeśli dostanie folder plików, to go usuwa, o ile ma uprawnienia
-        os.rmdir(cs.default_filename)
+        os.rmdir(cs.default_filename)       # should be changed later on
     if not os.path.exists(cs.default_filename):
         with open(cs.default_filename, '+w') as f:
             f.close()
@@ -55,7 +56,7 @@ def get_background():
     if background is None:
         return default_background
     else:
-        if '.jpg' in background or '.png' in background:  # tu warunek na zdjęcie
+        if '.jpg' in background or '.png' in background:  # to be implemented
             return background
         else:
             raise Exception('Invalid file')
@@ -77,7 +78,7 @@ def get_wall_cords_from_file(filepath):
             for i in range(0, len(lista)):
                 lista[i] = int(lista[i])
                 if lista[i] > 19 or lista[i] < 0:
-                    raise ValueError('You entered intigers which are not in interval <0,19>')
+                    raise ValueError('You entered integers which are not in interval <0,19>')
             for i, item in enumerate(lista):
                 lista[i] = dictionary.get(item, item)
         for i in range(0, len(positions)):
