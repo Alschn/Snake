@@ -1,3 +1,9 @@
+# default values, text, filepaths
+song_name = "./assets/soundtracks/song_snake.mp3"  # song_name = "song_snake.mp3"
+background_name = "./assets/backgrounds/background.jpg"
+default_filename = './assets/config/empty_map.txt'
+default_tickrate = 10
+title = "PR0JECT: SNAKE | press SPACE to pause"
 # base colors
 black = (0, 0, 0)
 red = (255, 0, 0)
@@ -31,11 +37,5 @@ left = "LEFT"
 right = "RIGHT"
 up = "UP"
 down = "DOWN"
-# default values, text, assets
-song_name = "./assets/song_snake.mp3"  # song_name = "song_snake.mp3"
-background_name = "./assets/background.jpg"
-default_filename = './assets/plansza_blank.txt'
-default_tickrate = 10
-title = "PR0JECT: SNAKE | press SPACE to pause"
 # values
 increment = 0.1
