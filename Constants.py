@@ -32,9 +32,9 @@ right = "RIGHT"
 up = "UP"
 down = "DOWN"
 # default values, text, assets
-song_name = "song_snake.mp3"  # song_name = "song_snake.mp3"
-background_name = "background.jpg"
-default_filename = 'plansza_blank.txt'
+song_name = "./assets/song_snake.mp3"  # song_name = "song_snake.mp3"
+background_name = "./assets/background.jpg"
+default_filename = './assets/plansza_blank.txt'
 default_tickrate = 10
 title = "PR0JECT: SNAKE | press SPACE to pause"
 # values
