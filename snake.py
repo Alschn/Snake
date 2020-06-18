@@ -1,9 +1,9 @@
 import pygame
 import sys
 from pygame import mixer
-from Game import Game, Snake, Food, Wall
-from Userinput import get_tickrate, get_users_map, get_wall_cords_from_file, get_spawnrange
-import Constants as cs
+from src.Game import Game, Snake, Food, Wall
+from src.Userinput import get_tickrate, get_users_map, get_wall_cords_from_file, get_spawnrange
+import src.Constants as cs
 
 
 pygame.init()

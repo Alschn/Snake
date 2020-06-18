@@ -1,6 +1,6 @@
 import argparse
 import os
-import Constants as cs
+import src.Constants as cs
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--tickrate", help='Set the game speed between 5 and 20. Default = 10', type=int)
@@ -81,7 +81,7 @@ def get_wall_cords_from_file(filepath):
                     raise ValueError('You entered integers which are not in interval <0,19>')
             for i, item in enumerate(lista):
                 lista[i] = dictionary.get(item, item)
-        for i in range(0, len(positions)):
+        for i in range(0, len(positions)):  # seems like unnecessary loop (to be fixed)
             for lista in positions:
                 if len(lista) > 2 or len(lista) == 1:
                     raise ValueError('Invalid arguments. Correct input: x y then newline')
