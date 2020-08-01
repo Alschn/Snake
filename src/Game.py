@@ -1,7 +1,7 @@
 import pygame
 import random
-import src.Constants as cs
-from src.Userinput import get_background
+import Constants as cs
+from Userinput import get_background
 
 
 class Game():

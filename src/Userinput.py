@@ -1,6 +1,6 @@
 import argparse
 import os
-import src.Constants as cs
+import Constants as cs
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--tickrate", help='Set the game speed between 5 and 20. Default = 10', type=int)
@@ -14,6 +14,7 @@ filename = args.filename
 spawnrange = args.spawnrange
 background = args.background
 soundtrack = args.soundtrack
+
 
 def get_tickrate():
     if tickrate is None:
