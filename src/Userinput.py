@@ -1,6 +1,6 @@
 import argparse
 import os
-import Constants as cs
+import src.Constants as cs
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--tickrate", help='Set the game speed between 5 and 20. Default = 10', type=int)
